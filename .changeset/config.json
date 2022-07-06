@@ -1,7 +1,7 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@2.0.0/schema.json",
   "changelog": [
-    "./initial-development",
+    "./initial-development.ts",
     { "repo": "jribbink/changesets-test" }
   ],
   "commit": false,
