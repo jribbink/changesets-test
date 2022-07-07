@@ -34,7 +34,7 @@ test("test", async () => {
   // Init framework
   init(basePath);
   // Start emulator
-  await emulator.start({ restPort: 8080, adminPort: 8888, grpcPort: 3569 });
+  await emulator.start();
 
   console.log(emulator.adminPort);
 
