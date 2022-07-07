@@ -5,9 +5,11 @@ test("test", async () => {
   const basePath = path.resolve(__dirname, "../cadence");
 
   // Init framework
-  init(basePath);
+  init(basePath, { re });
   // Start emulator
   await emulator.start();
+
+  console.log(emulator.adminPort);
 
   // Define code and arguments we want to pass
   const code = `
