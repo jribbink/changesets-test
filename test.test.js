@@ -1,5 +1,5 @@
 import path from "path";
-import { init, emulator, executeScript } from "flow-js-testing";
+import { init, emulator, executeScript } from "@onflow/flow-js-testing";
 
 test("test", async () => {
   const basePath = path.resolve(__dirname, "../cadence");
@@ -34,7 +34,7 @@ test("test", async () => {
   // Init framework
   init(basePath);
   // Start emulator
-  await emulator.start();
+  await emulator.start({ restPort: 8080, adminPort: 8888, grpcPort: 3569 });
 
   console.log(emulator.adminPort);
 

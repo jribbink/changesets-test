@@ -17,7 +17,6 @@
     "@changesets/get-github-info": "^0.5.1",
     "@changesets/types": "^5.0.0",
     "babel-jest": "^28.1.2",
-    "flow-js-testing": "^0.2.3-alpha.6",
     "jest": "^28.1.2",
     "jest-environment-node": "^28.1.2"
   },
